@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; /* Light gray background for the page */
+}
+
+.main-header {
+    background-color: #00bfff; /* Bright blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: normal; /* To match the image's font weight */
+}
+
+/* Navigation Styling */
+.main-nav {
+    background-color: #00bfff;
+    color: yellow; /* Bright blue, same as header */
+    padding: 10px 0;
+    border-top: 1px solid #0099cc; /* Slightly darker blue for separation */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange links horizontally */
+    justify-content: center; /* Center the links */
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.main-nav ul li a:hover {
+    background-color: #008fcc; /* Slightly darker blue on hover */
+}
+
+.main-nav ul li a.active {
+    background-color: white; /* White background for active link */
+    color: #00bfff; /* Blue text for active link */
+    font-weight: bold;
+}
+
+/* Gallery Styling */
+.gallery-container {
+    display: grid;
+    /* Create a responsive grid: 3 columns for larger screens, 2 for medium, 1 for small */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    max-width: 1000px; /* Limit content width */
+    margin: 20px auto; /* Center the gallery */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-item {
+    border: 3px solid #00bfff; /* Blue border around each image */
+    border-radius: 8px; /* Slightly rounded corners for the border */
+    overflow: hidden; /* Ensures image doesn't overflow the rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for each item */
+    display: flex; /* To center the image within the item if needed */
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* White background for the item */
+}
+
+.gallery-item img {
+    width: 100%; /* Make image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+/* Footer Styling */
+.main-footer {
+    background-color: #00bfff; /* Bright blue, same as header and nav */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
